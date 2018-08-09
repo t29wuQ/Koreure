@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Koreure.Views.WantBuyPage">
+    <StackLayout>
+        <Entry Placeholder="買いたいもの" Margin="0, 0, 0, 25" Text="{Binding ProductName}"/>
+        <Entry Placeholder="希望価格" Margin="0, 0, 0, 25" Text="{Binding ProductPrice}"/>
+        <Label Text="商品説明"/>
+        <Editor Text="{Binding ProductInfo}" HeightRequest="100"/>
+        <Button Text="掲示する" Command="{Binding PostCommand}"/>
+    </StackLayout>
+</ContentPage>

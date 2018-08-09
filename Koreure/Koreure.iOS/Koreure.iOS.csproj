@@ -130,6 +130,8 @@
     <BundleResource Include="Resources\Default.png" />
     <BundleResource Include="Resources\Default@2x.png" />
     <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
+    <BundleResource Include="Resources\initial.png" />
+    <BundleResource Include="Resources\ProductNull.png" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />

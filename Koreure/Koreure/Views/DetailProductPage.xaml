@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Koreure.Views.DetailProductPage">
+    <StackLayout>
+        <Label Text="{Binding Title}" FontSize="Large"/>
+        <Image Source="ProductNull"/>
+        <Label Text="詳細"/>
+        <Label Text="{Binding Description}"/>
+        <Label Text="{Binding Price}" FontSize="Large"/>
+        <Button Text="この商品を出品する"/>
+    </StackLayout>
+</ContentPage>

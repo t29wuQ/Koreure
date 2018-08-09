@@ -24,13 +24,17 @@ namespace Koreure
         {
             InitializeComponent();
 
-            await NavigationService.NavigateAsync("NavigationPage/MainPage");
+            await NavigationService.NavigateAsync("NavigationPage/WantBuyProductListPage");
         }
 
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
         {
             containerRegistry.RegisterForNavigation<NavigationPage>();
             containerRegistry.RegisterForNavigation<MainPage>();
+            containerRegistry.RegisterForNavigation<InitialPage>();
+            containerRegistry.RegisterForNavigation<WantBuyProductListPage>();
+            containerRegistry.RegisterForNavigation<WantBuyPage>();
+            containerRegistry.RegisterForNavigation<DetailProductPage>();
         }
     }
 }

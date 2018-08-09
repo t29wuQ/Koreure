@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:prism="cll-namespace:Prism.Mvvm;assembly=Prism.Forms" xmlns:b="clr-namespace:Koreure.Behaviors;assembly=Koreure" x:Class="Koreure.Views.WantBuyProductListPage" Title="欲しいもの一覧">
+    <StackLayout>
+        <ListView ItemsSource="{Binding ProductList}" HasUnevenRows="true">
+            <ListView.Behaviors>
+                <b:ItemSelectedToCommandBehavior Command="{Binding ProductInfoCommand}"/>
+            </ListView.Behaviors>
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Orientation="Horizontal">
+                            <Image Source="ProductNull.png" WidthRequest="55" HeightRequest="55" VerticalOptions="Start"/>
+                            <StackLayout>
+                                <Label Text="{Binding Title}" TextColor="Red"/>
+                                <Label Text="{Binding Price}"/>
+                            </StackLayout>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <Button Text="これが欲しい！" Command="{Binding PostCommand}"/>
+    </StackLayout>
+</ContentPage>

@@ -19,7 +19,7 @@ namespace Koreure.Api
             int productID = int.Parse(((jObject["productId"] as JValue).Value).ToString());
             string title = (string)((jObject["title"] as JValue).Value);
             string description = (string)((jObject["description"] as JValue).Value);
-            int price = int.Parse(((jObject["price"] as JValue).Value).ToString());
+            string price = (jObject["price"] as JValue).Value.ToString() + "円";
             var tagsValues = jObject["tags"].Cast<JValue>().ToArray();
             string[] tags = new string[tagsValues.Length];
             for (int i = 0; i < tags.Length; i++)

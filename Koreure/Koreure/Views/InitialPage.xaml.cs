@@ -5,9 +5,9 @@ using Xamarin.Forms;
 
 namespace Koreure.Views
 {
-    public partial class TopPage : CarouselPage
+    public partial class InitialPage : ContentPage
     {
-        public TopPage()
+        public InitialPage()
         {
             InitializeComponent();
         }

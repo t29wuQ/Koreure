@@ -13,8 +13,16 @@
   <ItemGroup>
     <Folder Include="Api\" />
     <Folder Include="Data\" />
+    <Folder Include="Behaviors\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Remove="Api\GetJson.cs" />
+    <Compile Remove="ViewModels\TopPageViewModel.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="ProductNull.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ProductNull.png" />
   </ItemGroup>
 </Project>
